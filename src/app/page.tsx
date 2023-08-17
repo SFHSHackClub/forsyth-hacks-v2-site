@@ -1,21 +1,24 @@
 import Image from 'next/image'
 import * as React from 'react'
+import ScrollBtn from '../../components/scrollbtn'
 
 export default function Home() {
 
   return (
     <main className="flex w-full min-h-screen flex-col items-center justify-between p-6 md:p-8 lg:p-24">
+      {/* Header */}
       <div className="z-10 flex w-full justify-center items-center font-mono text-sm lg:text-lg lg:justify-end">
-        <div className='justify-start w-[0px] md:w-full'>
-          scrollBtn(0, 
-          <Image
-            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert w-[0px] md:w-[140px] lg:w-[200px]"
-            src="/fs-hacks-temp-cropped.png"
-            alt="Next.js Logo"
-            width={180}
-            height={180}
-            priority
-          />)
+        <div className='justify-start w-[0px] md:w-full'> 
+          <ScrollBtn>
+            <Image
+              className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert w-[0px] md:w-[140px] lg:w-[200px]"
+              src="/fs-hacks-temp-cropped.png"
+              alt="Next.js Logo"
+              width={180}
+              height={180}
+              priority
+            />
+          </ScrollBtn>
         </div>
         <button className="relative right-0 top-0 flex w-fit font-mono pb-6 pt-8 p-2 lg:static lg:rounded-xl md:p-8 hover:bg-blue-300/25 active:bg-blue-100/25">
           about
@@ -29,6 +32,9 @@ export default function Home() {
         <button className="relative right-0 top-0 flex w-fit font-mono pb-6 pt-8 p-2 lg:static lg:rounded-xl md:p-8 hover:bg-blue-300/25 active:bg-blue-100/25">
           sponsors
         </button>
+      </div>
+      <div>
+        <p className='text-[#f5e65d] text-center'>register for <b>forsyth hacks</b> and build new things|</p>
       </div>
 
       <div className="relative flex place-items-center">
