@@ -1,0 +1,48 @@
+
+  .flip-card-outer {
+    width: 80vw;
+    height: 300px;
+  
+    .flip-card-inner {
+      transform-style: preserve-3d;
+      transition: .5s linear .1s;
+      position: relative;
+      width: inherit;
+      height: inherit;
+  
+      &.showBack {
+        transform: rotateY(180deg);
+      }
+    
+      .card {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    
+        &.front {
+          transform: rotateY(0);
+          background-color: #f5e65d;
+          color: black;
+          border-radius: 2rem;
+        }
+    
+        &.back {
+          transform: rotateY(180deg);
+          background-color: clear;
+          color: white;
+          border: 6px solid #f5e65d;
+          border-radius: 2rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1800px) {
+    .flip-card-outer {
+      width: 400px;
+      height: 300px;
+    }
+  }

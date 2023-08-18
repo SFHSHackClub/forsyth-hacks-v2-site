@@ -3,6 +3,8 @@ import * as React from 'react'
 import ScrollElement from '../../components/scrollelement'
 import EmblaCarousel from '../../components/Carousel/EmblaCarousel'
 import { EmblaOptionsType } from 'embla-carousel-react'
+import Spacer from '../../components/spacer'
+import FlipCard from '../../components/FlipCard/flipcard'
 
 
 export default function Home() {
@@ -13,7 +15,7 @@ export default function Home() {
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
  
   return (
-    <main className="flex w-full min-h-screen flex-col items-center justify-between p-6 lg:p-8 xl:px-8 2xl:px-20 ">
+    <main className="flex w-full min-h-screen flex-col items-center justify-center p-4 lg:p-8 xl:px-8 2xl:px-20 ">
       {/* Nav Bar */}
       <div className="z-10 flex w-full justify-center items-center font-mono text-md md:text-xl lg:text-2xl xl:text-3xl lg:justify-end">
         {/* Logo */}
@@ -50,9 +52,11 @@ export default function Home() {
             </div>
           </button>
         </a>
-        <button className="relative right-0 top-0 flex w-fit font-mono py-4 mt-2 p-2 lg:static lg:rounded-xl md:p-6 lg:mx-6 xl:mx-12 hover:bg-blue-300/25 active:bg-blue-100/25">
-          faq
-        </button>
+        <ScrollElement element='faq' offsetpercent={0.35}>
+          <button className="relative right-0 top-0 flex w-fit font-mono py-4 mt-2 p-2 lg:static lg:rounded-xl md:p-6 lg:mx-6 xl:mx-12 hover:bg-blue-300/25 active:bg-blue-100/25">
+            faq
+          </button>
+        </ScrollElement>
         <button className="relative right-0 top-0 flex w-fit font-mono py-4 mt-2 p-2 lg:static lg:rounded-xl md:p-6 lg:mx-6 xl:mx-12 hover:bg-blue-300/25 active:bg-blue-100/25">
           sponsors
         </button>
@@ -122,10 +126,78 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <br/><br/><br/><br/><br/><br/>
-      <div className='w-full'>
+
+      <Spacer height="50px"/>
+
+      {/* Image Carousel */}
+      <div className='flex w-full'>
         <EmblaCarousel slides={SLIDES} options={OPTIONS}/>
       </div>
+
+      {/* Description pt 2 */}
+      <div className='flex w-full items-center justify-center text-center text-md lg:text-2xl md:w-[70%]'>
+        <p>
+        This event is an opportunity for students to explore the realm of computer science and bring their creative ideas to life through a collaborative and competitive experience. Students will form groups and work together on a coding project based on the theme and then present them at the end.
+        <br/><br/>
+        Create projects, memories, and guide the story of your STEM journey at Forsyth Hacks!
+        </p>
+      </div>
+
+      <Spacer height='100px'/>
+      {/* FAQ */}
+      <div className='flex-col justify-center items-center w-full'>
+        <p id='faq' className='w-full text-6xl pb-20 text-center'>FAQ</p>
+        <div className='flex justify-center items-center'>
+          <div className='grid gap-8 grid-rows-9  lg:gap-20 lg:grid-rows-3 lg:grid-cols-3 w-fit items-center justify-center'>
+            <FlipCard
+              title='Hackathon? What’s that?'
+              content="A hackathon is a social coding event: you get 8 hours, mentors, workshops, lots of free food, and swag to build anything you want."
+              content2="Even if you’ve never written a line of code before, we’d love to have you there!"
+            />
+            <FlipCard
+              title='Will there be hacking?'
+              content="No, we’re not “hacking into the mainframe”. The term merely stands for coding and tinkering with computers."
+              content2="A hacker is someone who creates effective solutions to computing problems and strives to build projects. That’s what we aim for all Forsyth Hacks attendees to achieve!"
+            />
+            <FlipCard
+              title="What if I’ve never coded before?"
+              content="That’s totally fine! We’ll have beginner-friendly workshops and mentors to help you out."
+              content2="Come for the experience. We promise you won’t regret it.!"
+            />
+            <FlipCard
+              title='Is there a registration fee?'
+              content="Nope, thanks to our sponsors Forsyth Hacks is completely non-profit and free to participate in."
+            />
+            <FlipCard
+              title="Who’s eligible to participate?"
+              content="Any student who identifies as a high schooler can attend and participate."
+              content2="Coding experience does not matter!"
+            />
+            <FlipCard
+              title='What do I need to bring?'
+              content="Bring a laptop, charger, and anything else you think you’ll need to build your project throughout the day."
+            />
+            <FlipCard
+              title='Will there be prizes, food, and swag?'
+              content="Yes, yes, and yes!"
+              content2="No one will go home empty handed."
+            />
+            <FlipCard
+              title='How long is Forsyth Hacks?'
+              content="he hackathon will be a full day event from 9 AM to 6 PM."
+              content2="Even if you’ve never written a line of code before, we’d love to have you there!"
+            />
+            <FlipCard
+              title='Will there be teams? How many people per team?'
+              content="Teams can be anywhere around 1-4 people."
+              content2="Don’t worry if you don’t have a team by the time you register! You can meet new people and create a team the day of the hackathon."
+            />
+          </div>
+        </div>
+      </div>
+      <Spacer height='100px'/>
+
+
 
 
 
