@@ -1,5 +1,6 @@
 'use client'
 import React, { useCallback } from 'react'
+import Image from 'next/image'
 import useEmblaCarousel, {
   EmblaOptionsType,
   EmblaCarouselType
@@ -47,10 +48,12 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         <div className="embla__container">
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
-              <img
+              <Image  
                 className="embla__slide__img"
                 src={imageByIndex(index)}
                 alt="Your alt text"
+                width={300}
+                height={300}
               />
             </div>
           ))}

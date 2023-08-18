@@ -9,7 +9,7 @@ import FlipCard from '../../components/FlipCard/flipcard'
 
 export default function Home() {
 
-  const registerLink = "https://google.com/"
+  const registerLink = "https://reddit.com/r/thelostwoods/"
   const OPTIONS: EmblaOptionsType = { loop: true }
   const SLIDE_COUNT = 3
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
@@ -22,7 +22,7 @@ export default function Home() {
         <div className='justify-start w-[0px] md:w-full'> 
           <ScrollElement>
             <Image
-              className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert w-[0px] md:w-[160px] lg:w-[300px]"
+              className="relative md:w-[160px] lg:w-[300px]"
               src="/fs-hacks-temp-cropped.png"
               alt="Next.js Logo"
               width={180}
@@ -143,10 +143,10 @@ export default function Home() {
         </p>
       </div>
 
-      <Spacer height='100px'/>
+      <Spacer height='200px'/>
       {/* FAQ */}
       <div className='flex-col justify-center items-center w-full'>
-        <p id='faq' className='w-full text-6xl pb-20 text-center'>FAQ</p>
+        <p id='faq' className='w-full text-8xl pb-20 text-center'><b>faq</b></p>
         <div className='flex justify-center items-center'>
           <div className='grid gap-8 grid-rows-9  lg:gap-20 lg:grid-rows-3 lg:grid-cols-3 w-fit items-center justify-center'>
             <FlipCard
