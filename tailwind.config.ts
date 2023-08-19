@@ -17,6 +17,10 @@ const config: Config = {
         'fhyellow': '#f5e65d',
         'fhblue':  '#6C87E3',
       },
+      fontSize: {
+          xss: '0.5rem',
+          '2xs': '0.5rem',
+      }
     },
   },
   plugins: [],

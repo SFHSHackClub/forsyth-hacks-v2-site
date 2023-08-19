@@ -61,15 +61,17 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       </div>
       <div className="embla__dots">
         <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-        {scrollSnaps.map((_, index) => (
-          <DotButton
-            key={index}
-            onClick={() => onDotButtonClick(index)}
-            className={'embla__dot'.concat(
-              index === selectedIndex ? ' embla__dot--selected' : ''
-            )}
-          />
-        ))}
+        <div className='dots'>
+          {scrollSnaps.map((_, index) => (
+            <DotButton
+              key={index}
+              onClick={() => onDotButtonClick(index)}
+              className={'embla__dot'.concat(
+                index === selectedIndex ? ' embla__dot--selected' : ''
+              )}
+            />
+          ))}
+        </div>
         <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
       </div>
     </div>

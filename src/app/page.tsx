@@ -11,18 +11,18 @@ export default function Home() {
 
   const registerLink = "https://reddit.com/r/thelostwoods/"
   const OPTIONS: EmblaOptionsType = { loop: true }
-  const SLIDE_COUNT = 3
+  const SLIDE_COUNT = 4
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
  
   return (
     <main className="flex w-full min-h-screen flex-col items-center justify-center p-4 lg:p-8 xl:px-8 2xl:px-20 ">
       {/* Nav Bar */}
-      <div className="z-10 flex w-full justify-center items-center font-mono text-md md:text-xl lg:text-2xl xl:text-3xl lg:justify-end">
+      <div className="z-10 flex w-full justify-center items-center font-mono text-md md:text-lg lg:text-xl xl:text-2xl lg:justify-end">
         {/* Logo */}
         <div className='justify-start w-[0px] md:w-full'> 
           <ScrollElement>
             <Image
-              className="relative md:w-[160px] lg:w-[300px]"
+              className="relative md:w-[100px] lg:w-[150px] xl:w-[300px]"
               src="/fs-hacks-temp-cropped.png"
               alt="Next.js Logo"
               width={180}
@@ -38,7 +38,7 @@ export default function Home() {
           </button>
         </ScrollElement>
         <a href={registerLink} target='_blank'>
-          <button className="flex right-0 top-0 w-fit h-fit font-mono p-2 mt-2 lg:static lg:rounded-xl lg:mx-6 xl:mx-12 hover:bg-blue-300/25 active:bg-blue-100/25">
+          <button className="flex right-0 top-0 w-fit h-fit font-mono p-4 mt-2 lg:static lg:p-6 lg:rounded-xl lg:mx-6 xl:mx-12 hover:bg-blue-300/25 active:bg-blue-100/25">
             <div className='flex w-max items-center justify-center'>
             <p>register</p>
             <Image
@@ -64,7 +64,7 @@ export default function Home() {
 
       {/* Join Text */}
       <div>
-        <p className='text-fhyellow text-center p-4 text-md md:text-xl lg:text-2xl xl:text-4xl'><ScrollElement element='register'><u>register</u></ScrollElement> for <b>forsyth hacks</b> and build new things|</p>
+        <p className='text-fhyellow text-center p-4 text-md md:text-lg lg:text-xl xl:text-2xl'><ScrollElement element='register'><u>register</u></ScrollElement> for <b>forsyth hacks</b> and build new things|</p>
       </div>
 
       {/* Alt Header Image for Small */}
@@ -113,8 +113,8 @@ export default function Home() {
       <br/>
 
       {/* What is FH */}
-      <div id='about' className='static w-full p-4 items-center justify-center text-center text-md lg:text-2xl'>
-        <div className='text-lg lg:text-4xl py-8 w-full'>
+      <div id='about' className='static w-full p-4 items-center justify-center text-center text-sm lg:text-md xl:text-2xl'>
+        <div className='text-lg lg:text-2xl xl:text-4xl py-8 w-full'>
           what is <b>forsyth hacks 2.0</b>?
         </div>
         <br/>
@@ -135,7 +135,7 @@ export default function Home() {
       </div>
 
       {/* Description pt 2 */}
-      <div className='flex w-full items-center justify-center text-center text-md lg:text-2xl md:w-[70%]'>
+      <div className='flex w-full items-center justify-center text-center text-sm lg:text-md xl:text-2xl md:w-[70%]'>
         <p>
         This event is an opportunity for students to explore the realm of computer science and bring their creative ideas to life through a collaborative and competitive experience. Students will form groups and work together on a coding project based on the theme and then present them at the end.
         <br/><br/>
@@ -146,13 +146,14 @@ export default function Home() {
       <Spacer height='200px'/>
       {/* FAQ */}
       <div className='flex-col justify-center items-center w-full'>
-        <p id='faq' className='w-full text-8xl pb-20 text-center'><b>faq</b></p>
+        <p id='faq' className='w-full text-2xl lg:text-2xl xl:text-6xl pb-20 text-center'><b>faq</b></p>
         <div className='flex justify-center items-center'>
-          <div className='grid gap-8 grid-rows-9  lg:gap-20 lg:grid-rows-3 lg:grid-cols-3 w-fit items-center justify-center'>
+          <div className='grid gap-8 grid-rows-9  lg:gap-10 xl:gap-20 lg:grid-rows-3 lg:grid-cols-3 w-fit items-center justify-center'>
             <FlipCard
               title='Hackathon? What’s that?'
               content="A hackathon is a social coding event: you get 8 hours, mentors, workshops, lots of free food, and swag to build anything you want."
               content2="Even if you’ve never written a line of code before, we’d love to have you there!"
+              reversed={true}
             />
             <FlipCard
               title='Will there be hacking?'
@@ -196,6 +197,7 @@ export default function Home() {
         </div>
       </div>
       <Spacer height='100px'/>
+      
 
 
 

@@ -1,7 +1,7 @@
 
   .flip-card-outer {
     width: 80vw;
-    height: 300px;
+    height: 150px;
   
     .flip-card-inner {
       transform-style: preserve-3d;
@@ -39,10 +39,14 @@
       }
     }
   }  
+  .content {
+    font-size: 8px;
+    line-height: 1.25;
+  }
   @media screen and (min-width: 1024px) {
     .flip-card-outer {
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 200px;
     }
   }
 
@@ -50,5 +54,8 @@
     .flip-card-outer {
       width: 400px;
       height: 300px;
+    }
+    .content {
+      font-size: medium;
     }
   }
