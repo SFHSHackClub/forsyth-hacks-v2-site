@@ -1,13 +1,22 @@
 import Image from 'next/image'
 import * as React from 'react'
-import { useRef } from 'react'
 import ScrollElement from '../../components/scrollelement'
+import EmblaCarousel from '../../components/Carousel/EmblaCarousel'
+import { EmblaOptionsType } from 'embla-carousel-react'
+
 
 export default function Home() {
+
+  const registerLink = "https://google.com/"
+  const OPTIONS: EmblaOptionsType = { loop: true }
+  const SLIDE_COUNT = 3
+  const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+ 
   return (
     <main className="flex w-full min-h-screen flex-col items-center justify-between p-6 lg:p-8 xl:px-8 2xl:px-20 ">
-      {/* Header */}
+      {/* Nav Bar */}
       <div className="z-10 flex w-full justify-center items-center font-mono text-md md:text-xl lg:text-2xl xl:text-3xl lg:justify-end">
+        {/* Logo */}
         <div className='justify-start w-[0px] md:w-full'> 
           <ScrollElement>
             <Image
@@ -20,23 +29,38 @@ export default function Home() {
             />
           </ScrollElement>
         </div>
-        <button className="relative right-0 top-0 flex w-fit font-mono pb-6 pt-8 p-2 lg:static lg:rounded-xl md:p-6 lg:mx-6 xl:mx-12 hover:bg-blue-300/25 active:bg-blue-100/25">
-          about
-        </button>
-        <button className="relative right-0 top-0 flex w-fit font-mono pb-6 pt-8 p-2 lg:static lg:rounded-xl md:p-6 lg:mx-6 xl:mx-12 hover:bg-blue-300/25 active:bg-blue-100/25">
-          register
-        </button>
-        <button className="relative right-0 top-0 flex w-fit font-mono pb-6 pt-8 p-2 lg:static lg:rounded-xl md:p-6 lg:mx-6 xl:mx-12 hover:bg-blue-300/25 active:bg-blue-100/25">
+        {/* Nav Buttons  */}
+        <ScrollElement element='about' offsetpercent={0.2}>
+          <button className="relative right-0 top-0 flex w-fit font-mono py-4 mt-2 p-2 lg:static lg:rounded-xl md:p-6 lg:mx-6 xl:mx-12 hover:bg-blue-300/25 active:bg-blue-100/25">
+            about
+          </button>
+        </ScrollElement>
+        <a href={registerLink} target='_blank'>
+          <button className="flex right-0 top-0 w-fit h-fit font-mono p-2 mt-2 lg:static lg:rounded-xl lg:mx-6 xl:mx-12 hover:bg-blue-300/25 active:bg-blue-100/25">
+            <div className='flex w-max items-center justify-center'>
+            <p>register</p>
+            <Image
+              className='m-2 md:w-[25px]'
+              src='/newTab.png'
+              alt='New Tab Icon'
+              width={25}
+              height={25}
+              priority
+            />
+            </div>
+          </button>
+        </a>
+        <button className="relative right-0 top-0 flex w-fit font-mono py-4 mt-2 p-2 lg:static lg:rounded-xl md:p-6 lg:mx-6 xl:mx-12 hover:bg-blue-300/25 active:bg-blue-100/25">
           faq
         </button>
-        <button className="relative right-0 top-0 flex w-fit font-mono pb-6 pt-8 p-2 lg:static lg:rounded-xl md:p-6 lg:mx-6 xl:mx-12 hover:bg-blue-300/25 active:bg-blue-100/25">
+        <button className="relative right-0 top-0 flex w-fit font-mono py-4 mt-2 p-2 lg:static lg:rounded-xl md:p-6 lg:mx-6 xl:mx-12 hover:bg-blue-300/25 active:bg-blue-100/25">
           sponsors
         </button>
       </div>
 
       {/* Join Text */}
       <div>
-        <p className='text-[#f5e65d] text-center text-md md:text-xl lg:text-2xl xl:text-4xl'><ScrollElement element='register'><u>register</u></ScrollElement> for <b>forsyth hacks</b> and build new things|</p>
+        <p className='text-fhyellow text-center p-4 text-md md:text-xl lg:text-2xl xl:text-4xl'><ScrollElement element='register'><u>register</u></ScrollElement> for <b>forsyth hacks</b> and build new things|</p>
       </div>
 
       {/* Alt Header Image for Small */}
@@ -63,7 +87,7 @@ export default function Home() {
             priority
           />
         </div>
-        <p className='text-md sm:text-lg md:text-xl xl:text-4xl text-center w-[50%]'>
+        <p className='text-md sm:text-lg md:text-xl xl:text-4xl text-center'>
           <span className='text-lg sm:text-xl md:text-2xl xl:text-6xl'>November 18th, 2023</span> <br/>
           9:00 AM - 6:00 PM <br/>
           <br/>
@@ -72,20 +96,40 @@ export default function Home() {
         </p>
       </div>
 
+      {/* Register Button */}
+      <div className='static w-full py-16 items-center justify-center text-center'>
+        <a href={registerLink} target='_blank'>
+          <button id="register" className='px-8 py-4 bg-fhyellow text-black rounded-xl text-sm md:px-12 md:py-8 md:text-lg xl:px-114 xl:py-10 xl:text-2xl hover:bg-yellow-300 active:bg-yellow-100'>
+            ⚡ register now for free!
+          </button>
+        </a>
+      </div>
+
+      <br/>
+      <br/>
+
       {/* What is FH */}
-      <div className='static w-full p-4 items-center justify-center text-center w-full text-md lg:text-2xl'>
+      <div id='about' className='static w-full p-4 items-center justify-center text-center text-md lg:text-2xl'>
         <div className='text-lg lg:text-4xl py-8 w-full'>
           what is <b>forsyth hacks 2.0</b>?
         </div>
+        <br/>
         <div className='flex w-full justify-center items-center'>
-          <p className='w-[60%]'>
+          <p className='md:w-[70%]'>
             Welcome to the 2nd annual Official Forsyth County hackathon for high school students.
-            <br/>
+            <br/><br/>
             Forsyth Hacks is a FREE full-day high school hackathon (social coding event) for building projects, getting mentored, meeting other like-minded STEM students, and having fun for any high schooler that attends a Forsyth County school.
           </p>
         </div>
       </div>
       <br/><br/><br/><br/><br/><br/>
+      <div className='w-full'>
+        <EmblaCarousel slides={SLIDES} options={OPTIONS}/>
+      </div>
+
+
+
+
       <div id="test" className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -154,6 +198,9 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
+      </div>
+      <div className='py-[2000px]'>
+
       </div>
     </main>
   )
