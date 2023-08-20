@@ -1,11 +1,11 @@
-# Forsyth County Hacks 2.0 Website
+# Forsyth County Hacks 2.0 Website 
 
-Official website for Forsyth Hacks 2.0.
+Official website for Forsyth Hacks 2.0 ⚡.
 
 ## About
 Welcome to the 2nd annual Official Forsyth County hackathon for high school students.
 
-Forsyth Hacks is a FREE full-day high school hackathon (social coding event) for building projects, getting mentored, meeting other like-minded STEM students, and having fun for any high schooler that attends a Forsyth County school.
+Forsyth Hacks 2.0 ⚡ is a FREE full-day high school hackathon (social coding event) for building projects, getting mentored, meeting other like-minded STEM students, and having fun for any high schooler that attends a Forsyth County school.
 
 This event is an opportunity for students to explore the realm of computer science and bring their creative ideas to life through a collaborative and competitive experience. Students will form groups and work together on a coding project based on the theme and then present them at the end. 
 
