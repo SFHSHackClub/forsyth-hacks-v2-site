@@ -9,7 +9,7 @@ import FlipCard from '../../components/FlipCard/flipcard'
 
 export default function Home() {
 
-  const registerLink = "https://reddit.com/r/thelostwoods/"
+  const registerLink = "https://forms.gle/BCkBV4i1E3kf36jCA"
   const OPTIONS: EmblaOptionsType = { loop: true }
   const SLIDE_COUNT = 4
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
