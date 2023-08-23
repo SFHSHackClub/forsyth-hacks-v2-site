@@ -3,7 +3,8 @@ import React, { useCallback } from 'react'
 import Image from 'next/image'
 import useEmblaCarousel, {
   EmblaOptionsType,
-  EmblaCarouselType
+  EmblaCarouselType,
+  EmblaPluginType
 } from 'embla-carousel-react'
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 import {
@@ -28,7 +29,11 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     const { autoplay } = emblaApi.plugins()
     if (!autoplay) return
     if (autoplay.options.stopOnInteraction !== false) autoplay.stop()
+    setTimeout(() => autoplay.play(), 1000) 
   }, [])
+
+  
+
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(
     emblaApi,

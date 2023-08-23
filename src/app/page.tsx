@@ -5,13 +5,14 @@ import EmblaCarousel from '../../components/Carousel/EmblaCarousel'
 import { EmblaOptionsType } from 'embla-carousel-react'
 import Spacer from '../../components/spacer'
 import FlipCard from '../../components/FlipCard/flipcard'
+import TypeEffect from '../../components/TypeEffect'
 
 
 export default function Home() {
 
   const registerLink = "https://reddit.com/r/thelostwoods/"
   const OPTIONS: EmblaOptionsType = { loop: true }
-  const SLIDE_COUNT = 4
+  const SLIDE_COUNT = 8
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
  
   return (
@@ -22,7 +23,7 @@ export default function Home() {
         <div className='justify-start w-[0px] md:w-full'> 
           <ScrollElement>
             <Image
-              className="relative md:w-[100px] lg:w-[150px] xl:w-[300px]"
+              className="relative md:w-[50px] lg:w-[100px] xl:w-[150px]"
               src="/fs-hacks-temp-cropped.png"
               alt="Next.js Logo"
               width={180}
@@ -64,8 +65,24 @@ export default function Home() {
 
       {/* Join Text */}
       <div>
-        <p className='text-fhyellow text-center p-4 text-md md:text-lg lg:text-xl xl:text-2xl'><ScrollElement element='register'><u>register</u></ScrollElement> for <b>forsyth hacks</b> and build new things|</p>
-      </div>
+        <p className='text-fhyellow text-center p-4 text-md md:text-lg lg:text-xl xl:text-2xl'>
+          {'> '}
+          <TypeEffect
+              sequence={['register for ',1000]}
+              cursor={false}
+          />
+          {' '}
+          <TypeEffect
+              sequence={[800,'forsyth hacks ']}
+              className='font-bold'
+              cursor={false}
+          />
+          {' '}
+          <TypeEffect
+              sequence={[1600,'and build new things']}
+          />
+        </p>
+      </div>  
 
       {/* Alt Header Image for Small */}
       <div className="relative flex place-items-center p-4">
@@ -130,7 +147,7 @@ export default function Home() {
       <Spacer height="50px"/>
 
       {/* Image Carousel */}
-      <div className='flex w-full'>
+      <div className='flex w-[100vw]'>
         <EmblaCarousel slides={SLIDES} options={OPTIONS}/>
       </div>
 
@@ -198,7 +215,46 @@ export default function Home() {
       </div>
       <Spacer height='100px'/>
       
-
+      {/* Sponsors */}
+      <div id='about' className='static w-full p-4 items-center justify-center text-center text-sm lg:text-md xl:text-2xl'>
+        <div className='text-lg lg:text-2xl xl:text-4xl py-8 w-full'>
+          <b>Sponsors</b>
+        </div>
+        <br/>
+        <div className='flex w-full justify-center items-center'>
+          <p className='md:w-[70%]'>
+            We are very grateful to all our sponsors who help makes events like these possible!
+            <br/><br/>
+            If you would like to donate, you can do so here.
+          </p>
+        </div>
+        <div className='grid gap-8 py-8 grid-cols-1 grid-rows-3 items-center justify-items-center lg:grid-cols-3 lg:grid-rows-1 lg:py-16 xl:w-[70%] xl:m-auto'>
+          <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4'>
+            <Image
+              src="/carousel/image1.jpg"
+              alt='Sponsor 1'
+              layout='fill'
+              priority
+            />
+          </div>
+          <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4'>
+            <Image
+              src="/carousel/image1.jpg"
+              alt='Sponsor 1'
+              layout='fill'
+              priority
+            />
+          </div>
+          <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4'>
+            <Image
+              src="/carousel/image1.jpg"
+              alt='Sponsor 1'
+              layout='fill'
+              priority
+            />
+          </div>
+        </div>
+      </div>
 
 
 
