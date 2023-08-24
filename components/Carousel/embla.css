@@ -6,6 +6,7 @@
     padding-right: 10vw;
     justify-content: center;
     align-items: center;
+    padding-top: 1.5rem;
   }
   .embla__viewport {
     overflow: hidden;
@@ -118,6 +119,7 @@
       --slide-size: 40%;
       padding-left: 0vw;
       padding-right: 0vw;
+      padding-top: 3rem;
     }
     .dots {
       width: auto;
@@ -145,6 +147,7 @@
   @media only screen and (min-width: 1800px) {
     .embla {
       --slide-spacing: 5rem;
+      padding-top: 4rem;
     }
     .embla__button {
       width: 4rem;

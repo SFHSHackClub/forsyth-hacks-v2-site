@@ -5,9 +5,10 @@
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-rgb: 108,135,227;
+  --alt-rgb: 245, 230, 93;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  background: rgb(var(--alt-rgb));
 }

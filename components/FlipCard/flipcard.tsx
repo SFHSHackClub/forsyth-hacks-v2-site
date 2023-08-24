@@ -2,15 +2,17 @@
 import { useEffect, useState } from 'react';
 import './flipcard.scss'
 import cn from 'classnames'
+import  { isMobile } from 'react-device-detect'
 
 export default function FlipCard({ title, content, content2, classname, reversed }: {title: string, content:string, content2?:string, classname?: string, reversed?: boolean}) {
   const [showBack, setShowBack] = useState(false);
 
-  function handleClick() { 
-      setShowBack(!showBack);
+  function handleClick() {
+    setShowBack(!showBack);
   } 
 
   function handleHover() {
+    if (isMobile) return;
     if (!showBack) {
       setShowBack(!showBack)
     }
