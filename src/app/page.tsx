@@ -287,8 +287,8 @@ export default function Home() {
             <div className='md:col-span-1 lg:col-span-2 text-fhyellow antialiased'>
               <b>Still got questions?</b> We’ll reach out in 24 hours<br/>
               <br/>
-              <b>Email: hackclubsfhs<span className='font-normal'>@</span>gmail.com</b><br/>
-              Instagram: @forsythhacks
+              <b>Email: <a href = "mailto: hackclubsfhs@gmail.com">hackclubsfhs<span className='font-normal'>@</span>gmail.com</a></b><br/>
+              <a href="https://www.instagram.com/forsythhacks/">Instagram: @forsythhacks</a>
             </div>
           </div>
         </div>
@@ -296,7 +296,7 @@ export default function Home() {
       {/* Footer */}
       <div className='flex flex-col w-[100vw] bg-fhyellow text-fhblue text-center justify-end p-6'>
         <p className='text-md w-full h-full self-start mb-16'>
-          follow us on instagram: @forsythhacks
+          <a href="https://www.instagram.com/forsythhacks/">follow us on instagram: @forsythhacks</a>
         </p>
         <p className='text-sm w-full self-end'>
           <b>Forsyth County Hacks is fiscally sponsored by Hack Club Bank, a project by The Hack Foundation (d.b.a. Hack Club), a 501(c)(3) nonprofit (EIN: 81-2908499).</b>
