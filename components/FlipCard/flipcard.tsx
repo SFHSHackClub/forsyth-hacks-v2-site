@@ -32,8 +32,7 @@ export default function FlipCard({ title, content, content2, classname, reversed
               </div>
               <div className="flex card back justify-center items-center">
                 <div className="card-body d-flex justify-content-center align-items-center p-4">
-                  <p><b>{title}</b></p>
-                  <br/>
+                  <p className='title'><b>{title}</b></p>
                   <p className='content'>{content}<br/><br/>{content2}</p>
                 </div>
               </div>

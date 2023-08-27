@@ -38,9 +38,12 @@
         }
       }
     }
-  }  
+  } 
+  .title {
+    padding-bottom: 4px;
+  }
   .content {
-    font-size: 8px;
+    font-size: 10px;
     line-height: 1.25;
   }
   @media screen and (min-width: 640px) {
@@ -50,8 +53,8 @@
   }
   @media screen and (min-width: 1024px) {
     .flip-card-outer {
-      width: 250px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
     }
   }
 

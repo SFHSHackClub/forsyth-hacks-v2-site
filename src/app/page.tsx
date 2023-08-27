@@ -114,7 +114,7 @@ export default function Home() {
             9:00 AM - 6:00 PM <br/>
             <br/>
             Old Atlanta Rec Center<br/>
-            <span className='text-sm sm:txt-md md:text-lg xl:text-2xl'>Esports Arena || 810 Nichols Road, Suwanee</span>
+            <span className='text-sm sm:txt-md md:text-lg xl:text-2xl'>Esports Arena / 810 Nichols Road, Suwanee, GA</span>
           </p>
         </div>
 
@@ -261,7 +261,7 @@ export default function Home() {
           <div className='text-lg lg:text-2xl xl:text-4xl py-8 w-full'>
             <b>team & contact</b>
           </div>
-          <div className='grid gap-8 py-8 grid-cols-1 grid-rows-3 items-center text-md md:grid-cols-3 lg:grid-cols-4 md:grid-rows-1 lg:py-16 xl:w-[70%] xl:m-auto'>
+          <div className='grid gap-8 py-8 grid-cols-1 grid-rows-3 items-center text-md md:grid-cols-3 lg:grid-cols-4 md:grid-rows-1 lg:py-16 xl:m-auto'>
             <div>
               <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4 mx-auto'>
                 <Image
@@ -284,17 +284,17 @@ export default function Home() {
               </div>
               <p className='pt-6'>Christian Dutton <br/> Co-Executive Director</p>
             </div>
-            <div className='md:col-span-1 lg:col-span-2 text-fhyellow'>
-              <b>Still got questions?</b> We’ll reach back in 24 hours.<br/>
+            <div className='md:col-span-1 lg:col-span-2 text-fhyellow antialiased'>
+              <b>Still got questions?</b> We’ll reach out in 24 hours<br/>
               <br/>
-              <b>Email: hackclubsfhs@gmail.com</b><br/>
+              <b>Email: hackclubsfhs<span className='font-normal'>@</span>gmail.com</b><br/>
               Instagram: @forsythhacks
             </div>
           </div>
         </div>
       </main>
       {/* Footer */}
-      <div className='flex flex-col w-full bg-fhyellow text-fhblue text-center justify-end p-6'>
+      <div className='flex flex-col w-[100vw] bg-fhyellow text-fhblue text-center justify-end p-6'>
         <p className='text-md w-full h-full self-start mb-16'>
           follow us on instagram: @forsythhacks
         </p>
