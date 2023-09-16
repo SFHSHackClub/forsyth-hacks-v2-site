@@ -226,15 +226,15 @@ export default function Home() {
             <p className='md:w-[70%]'>
               We are very grateful to all our sponsors who help makes events like these possible!
               <br/><br/>
-              If you would like to donate, you can do so here.
+              If you would like to donate, you can do so <a className='text-fhyellow border-solid border-2 p-1' href='https://hcb.hackclub.com/donations/start/forsyth-county-hacks' target='_blank'> here.</a>
             </p>
           </div>
           <div className='text-xl xl:text-4xl grid gap-8 py-8 grid-cols-1 grid-rows-2 items-center justify-items-center md:grid-cols-2 md:grid-rows-1 lg:py-16 2xl:w-[70%] 2xl:m-auto'>
             <a href='https://hackclub.com' target='_blank'>
-              <div className='relative rounded-full bg-blue-200 w-64 h-64 md:w-[18rem] md:h-[18rem] lg:w-[20rem] lg:h-[20rem] 2xl:w-[24rem] 2xl:h-[24rem] overflow-clip border-white border-4 mx-auto'>
+              <div className='relative rounded-full bg-blue-200 w-64 h-64 md:w-[17rem] md:h-[17rem] lg:w-[18rem] lg:h-[18rem] 2xl:w-[20rem] 2xl:h-[20rem] overflow-clip border-white border-4 mx-auto'>
                 <Image
                   src="/hackclub.jpg"
-                  alt='Sponsor 1'
+                  alt='Hack Club Logo'
                   layout='fill'
                   priority
                 />
@@ -242,10 +242,10 @@ export default function Home() {
               <p className='pt-6'>Hack Club</p>
             </a>
             <a href='https://www.postman.com/' target='_blank'>
-              <div className='relative rounded-full bg-blue-200 w-64 h-64 md:w-[18rem] md:h-[18rem] lg:w-[20rem] lg:h-[20rem] 2xl:w-[24rem] 2xl:h-[24rem] overflow-clip border-white border-4 mx-auto'>
+              <div className='relative rounded-full bg-blue-200 w-64 h-64 md:w-[17rem] md:h-[17rem] lg:w-[18rem] lg:h-[18rem] 2xl:w-[20rem] 2xl:h-[20rem] overflow-clip border-white border-4 mx-auto'>
                 <Image
                   src="/postman.jpg"
-                  alt='Sponsor 1'
+                  alt='Postman Logo'
                   layout='fill'
                   priority
                 />
@@ -274,8 +274,8 @@ export default function Home() {
             <div>
               <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4 mx-auto'>
                 <Image
-                  src="/fs-hacks.png"
-                  alt='Sponsor 1'
+                  src="/sahiti.jpeg"
+                  alt='Sahiti Headshot'
                   layout='fill'
                   priority
                 />
@@ -285,8 +285,8 @@ export default function Home() {
             <div>
               <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4 mx-auto'>
                 <Image
-                  src="/fs-hacks.png"
-                  alt='Sponsor 1'
+                  src="/christian.png"
+                  alt='Christian Headshot'
                   layout='fill'
                   priority
                 />
@@ -297,23 +297,23 @@ export default function Home() {
               <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4 mx-auto'>
                 <Image
                   src="/dj.png"
-                  alt='Sponsor 1'
+                  alt='DJ Headshot'
                   layout='fill'
                   priority
                 />
               </div>
-              <p className='pt-6'>DJ <br/> Creative?</p>
+              <p className='pt-6'>DJ</p>
             </div>
             <div>
               <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4 mx-auto'>
                 <Image
                   src="/ryan.png"
-                  alt='Sponsor 1'
+                  alt='Ryan Headshot'
                   layout='fill'
                   priority
                 />
               </div>
-              <p className='pt-6'>Ryan <br/> Something?</p>
+              <p className='pt-6'>Ryan</p>
             </div>
             <div className='md:col-span-2 cols-span-1 text-fhyellow antialiased order-last lg:order-none'>
               <b>Still got questions?</b> We’ll reach out in 24 hours<br/>
