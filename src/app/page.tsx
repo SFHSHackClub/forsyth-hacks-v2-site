@@ -274,7 +274,7 @@ export default function Home() {
             <div>
               <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4 mx-auto'>
                 <Image
-                  src="/sahiti.jpeg"
+                  src="/sahiti.png"
                   alt='Sahiti Headshot'
                   layout='fill'
                   priority
