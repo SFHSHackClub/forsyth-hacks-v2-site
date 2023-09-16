@@ -59,9 +59,11 @@ export default function Home() {
               faq
             </button>
           </ScrollElement>
-          <button className="relative right-0 top-0 flex w-fit font-mono py-4 mt-2 p-2 lg:static lg:rounded-xl md:p-6 lg:mx-6 xl:mx-12 hover:bg-blue-300/25 active:bg-blue-100/25">
-            sponsors
-          </button>
+          <ScrollElement element='sponsor' offsetpercent={0.35}>
+            <button className="relative right-0 top-0 flex w-fit font-mono py-4 mt-2 p-2 lg:static lg:rounded-xl md:p-6 lg:mx-6 xl:mx-12 hover:bg-blue-300/25 active:bg-blue-100/25">
+              sponsors
+            </button>
+          </ScrollElement>
         </div>
 
         {/* Join Text */}
@@ -215,7 +217,7 @@ export default function Home() {
         <Spacer height='100px'/>
         
         {/* Sponsors */}
-        <div id='about' className='static w-full p-4 items-center justify-center text-center text-sm lg:text-md xl:text-2xl'>
+        <div id='sponsor' className='static w-full p-4 items-center justify-center text-center text-sm lg:text-md xl:text-2xl'>
           <div className='text-lg lg:text-2xl xl:text-4xl py-8 w-full'>
             <b>Sponsors</b>
           </div>
@@ -268,7 +270,7 @@ export default function Home() {
           <div className='text-lg lg:text-2xl xl:text-4xl py-8 w-full'>
             <b>team & contact</b>
           </div>
-          <div className='grid gap-8 py-8 grid-cols-1 grid-rows-5 items-center text-md md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 lg:py-16 xl:m-auto'>
+          <div className='grid gap-8 py-8 grid-cols-1 grid-rows-5 items-center text-md md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:py-16 xl:m-auto'>
             <div>
               <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4 mx-auto'>
                 <Image
@@ -290,12 +292,6 @@ export default function Home() {
                 />
               </div>
               <p className='pt-6'>Christian Dutton <br/> Co-Executive Director</p>
-            </div>
-            <div className='col-span-1 text-fhyellow antialiased order-last lg:order-none'>
-              <b>Still got questions?</b> We’ll reach out in 24 hours<br/>
-              <br/>
-              <b>Email: <a href = "mailto: hackclubsfhs@gmail.com">hackclubsfhs<span className='font-normal'>@</span>gmail.com</a></b><br/>
-              <a href="https://www.instagram.com/forsythhacks/">Instagram: @forsythhacks</a>
             </div>
             <div>
               <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4 mx-auto'>
@@ -319,7 +315,13 @@ export default function Home() {
               </div>
               <p className='pt-6'>Ryan <br/> Something?</p>
             </div>
-            <div>
+            <div className='md:col-span-2 cols-span-1 text-fhyellow antialiased order-last lg:order-none'>
+              <b>Still got questions?</b> We’ll reach out in 24 hours<br/>
+              <br/>
+              <b>Email: <a href = "mailto: hackclubsfhs@gmail.com">hackclubsfhs<span className='font-normal'>@</span>gmail.com</a></b><br/>
+              <a href="https://www.instagram.com/forsythhacks/">Instagram: @forsythhacks</a>
+            </div>
+            {/*<div>
               <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4 mx-auto'>
                 <Image
                   src="/fs-hacks.png"
@@ -329,8 +331,7 @@ export default function Home() {
                 />
               </div>
               <p className='pt-6'>Person <br/> Something?</p>
-            </div>
-
+            </div>*/}
           </div>
         </div>
       </main>
