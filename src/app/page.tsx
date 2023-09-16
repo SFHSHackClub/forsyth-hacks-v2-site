@@ -25,7 +25,7 @@ export default function Home() {
             <ScrollElement>
               <Image
                 className="relative md:w-[50px] lg:w-[100px] xl:w-[150px]"
-                src="/fs-hacks-temp-cropped.png"
+                src="/fs-hacks-banner.png"
                 alt="Next.js Logo"
                 width={180}
                 height={180}
@@ -88,11 +88,11 @@ export default function Home() {
         {/* Alt Header Image for Small */}
         <div className="relative flex place-items-center p-4">
           <Image
-            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert md:w-[0px]"
-            src="/fs-hacks-temp-cropped.png"
-            alt="Next.js Logo"
-            width={180}
-            height={180}
+            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert w-[180px] md:w-[0px]"
+            src="/fs-hacks.png"
+            alt="Forsyth Hacks Logo"
+            width={500}
+            height={500}
             priority
           />
         </div>
@@ -101,11 +101,11 @@ export default function Home() {
         <div className='flex w-full p-4 items-center justify-center'>
           <div className='flex w-0 justify-center md:w-[50%]'>
             <Image
-              className='w-0 md:w-[200px] lg:w-[300px] xl:w-[400px] '
-              src="/fs-hacks-temp-cropped.png"
+              className='w-0 w-[100px] md:w-[200px] lg:w-[300px] xl:w-[400px] '
+              src="/fs-hacks.png"
               alt="Forsyth Hacks Logo"
-              width={100}
-              height={100}
+              width={500}
+              height={500}
               priority
             />
           </div>
@@ -227,31 +227,38 @@ export default function Home() {
               If you would like to donate, you can do so here.
             </p>
           </div>
-          <div className='grid gap-8 py-8 grid-cols-1 grid-rows-3 items-center justify-items-center md:grid-cols-3 md:grid-rows-1 lg:py-16 xl:w-[70%] xl:m-auto'>
-            <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4'>
+          <div className='text-xl xl:text-4xl grid gap-8 py-8 grid-cols-1 grid-rows-2 items-center justify-items-center md:grid-cols-2 md:grid-rows-1 lg:py-16 2xl:w-[70%] 2xl:m-auto'>
+            <a href='https://hackclub.com' target='_blank'>
+              <div className='relative rounded-full bg-blue-200 w-64 h-64 md:w-[18rem] md:h-[18rem] lg:w-[20rem] lg:h-[20rem] 2xl:w-[24rem] 2xl:h-[24rem] overflow-clip border-white border-4 mx-auto'>
+                <Image
+                  src="/hackclub.jpg"
+                  alt='Sponsor 1'
+                  layout='fill'
+                  priority
+                />
+              </div>
+              <p className='pt-6'>Hack Club</p>
+            </a>
+            <a href='https://www.postman.com/' target='_blank'>
+              <div className='relative rounded-full bg-blue-200 w-64 h-64 md:w-[18rem] md:h-[18rem] lg:w-[20rem] lg:h-[20rem] 2xl:w-[24rem] 2xl:h-[24rem] overflow-clip border-white border-4 mx-auto'>
+                <Image
+                  src="/postman.jpg"
+                  alt='Sponsor 1'
+                  layout='fill'
+                  priority
+                />
+              </div>
+              <p className='pt-6'>Postman</p>
+            </a>
+
+            {/*<div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4'>
               <Image
                 src="/carousel/image1.jpg"
                 alt='Sponsor 1'
                 layout='fill'
                 priority
               />
-            </div>
-            <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4'>
-              <Image
-                src="/carousel/image1.jpg"
-                alt='Sponsor 1'
-                layout='fill'
-                priority
-              />
-            </div>
-            <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4'>
-              <Image
-                src="/carousel/image1.jpg"
-                alt='Sponsor 1'
-                layout='fill'
-                priority
-              />
-            </div>
+            </div>*/}
           </div>
         </div>
         <Spacer height='100px'/>
@@ -261,11 +268,11 @@ export default function Home() {
           <div className='text-lg lg:text-2xl xl:text-4xl py-8 w-full'>
             <b>team & contact</b>
           </div>
-          <div className='grid gap-8 py-8 grid-cols-1 grid-rows-3 items-center text-md md:grid-cols-3 lg:grid-cols-4 md:grid-rows-1 lg:py-16 xl:m-auto'>
+          <div className='grid gap-8 py-8 grid-cols-1 grid-rows-5 items-center text-md md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 lg:py-16 xl:m-auto'>
             <div>
               <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4 mx-auto'>
                 <Image
-                  src="/carousel/image1.jpg"
+                  src="/fs-hacks.png"
                   alt='Sponsor 1'
                   layout='fill'
                   priority
@@ -276,7 +283,7 @@ export default function Home() {
             <div>
               <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4 mx-auto'>
                 <Image
-                  src="/carousel/image1.jpg"
+                  src="/fs-hacks.png"
                   alt='Sponsor 1'
                   layout='fill'
                   priority
@@ -284,16 +291,50 @@ export default function Home() {
               </div>
               <p className='pt-6'>Christian Dutton <br/> Co-Executive Director</p>
             </div>
-            <div className='md:col-span-1 lg:col-span-2 text-fhyellow antialiased'>
+            <div className='col-span-1 text-fhyellow antialiased order-last lg:order-none'>
               <b>Still got questions?</b> We’ll reach out in 24 hours<br/>
               <br/>
               <b>Email: <a href = "mailto: hackclubsfhs@gmail.com">hackclubsfhs<span className='font-normal'>@</span>gmail.com</a></b><br/>
               <a href="https://www.instagram.com/forsythhacks/">Instagram: @forsythhacks</a>
             </div>
+            <div>
+              <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4 mx-auto'>
+                <Image
+                  src="/dj.png"
+                  alt='Sponsor 1'
+                  layout='fill'
+                  priority
+                />
+              </div>
+              <p className='pt-6'>DJ <br/> Creative?</p>
+            </div>
+            <div>
+              <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4 mx-auto'>
+                <Image
+                  src="/ryan.png"
+                  alt='Sponsor 1'
+                  layout='fill'
+                  priority
+                />
+              </div>
+              <p className='pt-6'>Ryan <br/> Something?</p>
+            </div>
+            <div>
+              <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4 mx-auto'>
+                <Image
+                  src="/fs-hacks.png"
+                  alt='Sponsor 1'
+                  layout='fill'
+                  priority
+                />
+              </div>
+              <p className='pt-6'>Person <br/> Something?</p>
+            </div>
+
           </div>
         </div>
       </main>
-      {/* Footer */}
+      {/* Footer */} 
       <div className='flex flex-col w-[100vw] bg-fhyellow text-fhblue text-center justify-end p-6'>
         <p className='text-md w-full h-full self-start mb-16'>
           <a href="https://www.instagram.com/forsythhacks/">follow us on instagram: @forsythhacks</a>
