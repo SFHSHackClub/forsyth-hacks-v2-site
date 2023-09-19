@@ -229,8 +229,8 @@ export default function Home() {
               If you would like to donate, you can do so <a className='text-fhyellow border-solid border-2 p-1' href='https://hcb.hackclub.com/donations/start/forsyth-county-hacks' target='_blank'> here.</a>
             </p>
           </div>
-          <div className='text-xl xl:text-4xl grid gap-8 py-8 grid-cols-1 grid-rows-2 items-center justify-items-center md:grid-cols-2 md:grid-rows-1 lg:py-16 2xl:w-[70%] 2xl:m-auto'>
-            <a href='https://hackclub.com' target='_blank'>
+          <div className='text-xl xl:text-4xl gap-8 py-8 grid-cols-1 grid-rows-2 items-center justify-items-center md:grid-cols-2 md:grid-rows-1 lg:py-16 2xl:w-[70%] 2xl:m-auto'>
+            {/*<a href='https://hackclub.com' target='_blank'>
               <div className='relative rounded-full bg-blue-200 w-64 h-64 md:w-[17rem] md:h-[17rem] lg:w-[18rem] lg:h-[18rem] 2xl:w-[20rem] 2xl:h-[20rem] overflow-clip border-white border-4 mx-auto'>
                 <Image
                   src="/hackclub.jpg"
@@ -240,9 +240,9 @@ export default function Home() {
                 />
               </div>
               <p className='pt-6'>Hack Club</p>
-            </a>
+            </a>*/}
             <a href='https://www.postman.com/' target='_blank'>
-              <div className='relative rounded-full bg-blue-200 w-64 h-64 md:w-[17rem] md:h-[17rem] lg:w-[18rem] lg:h-[18rem] 2xl:w-[20rem] 2xl:h-[20rem] overflow-clip border-white border-4 mx-auto'>
+              <div className='relative rounded-full bg-blue-200 w-48 h-48 2xl:w-64 2xl:h-64 md:w-[17 rem] md:h-[17 rem] lg:w-[18 rem] lg:h-[18 rem] 2xl:w-[20 rem] 2xl:h-[20 rem] overflow-clip border-white border-4 mx-auto'>
                 <Image
                   src="/postman.jpg"
                   alt='Postman Logo'
@@ -340,8 +340,8 @@ export default function Home() {
         <p className='text-md w-full h-full self-start mb-16'>
           <a href="https://www.instagram.com/forsythhacks/">follow us on instagram: @forsythhacks</a>
         </p>
-        <p className='text-sm w-full self-end'>
-          <b>Forsyth County Hacks is fiscally sponsored by Hack Club Bank, a project by The Hack Foundation (d.b.a. Hack Club), a 501(c)(3) nonprofit (EIN: 81-2908499).</b>
+        <p className='text-sm w-full self-end'> 
+          <b>Forsyth Hacks 2.0 is fiscally sponsored by HCB, a project by The Hack Foundation (d.b.a. Hack Club), a 501(c)(3) nonprofit (EIN: 81-2908499).</b>
         </p>
       </div>
     </>
