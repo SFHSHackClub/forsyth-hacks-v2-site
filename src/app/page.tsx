@@ -90,7 +90,7 @@ export default function Home() {
         {/* Alt Header Image for Small */}
         <div className="relative flex place-items-center p-4">
           <Image
-            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert w-[180px] md:w-[0px]"
+            className="relative md:w-[0px]"
             src="/fs-hacks.png"
             alt="Forsyth Hacks Logo"
             width={500}
