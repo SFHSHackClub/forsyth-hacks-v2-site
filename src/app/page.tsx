@@ -181,7 +181,7 @@ export default function Home() {
               <FlipCard
                 title="What if I’ve never coded before?"
                 content="That’s totally fine! We’ll have beginner-friendly workshops and mentors to help you out."
-                content2="Come for the experience. We promise you won’t regret it.!"
+                content2="Come for the experience. We promise you won’t regret it!"
               />
               <FlipCard
                 title='Is there a registration fee?'
@@ -203,7 +203,7 @@ export default function Home() {
               />
               <FlipCard
                 title='How long is Forsyth Hacks?'
-                content="he hackathon will be a full day event from 9 AM to 6 PM."
+                content="The hackathon will be a full day event from 9 AM to 6 PM."
                 content2="Even if you’ve never written a line of code before, we’d love to have you there!"
               />
               <FlipCard
