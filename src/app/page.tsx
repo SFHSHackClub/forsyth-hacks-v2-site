@@ -226,7 +226,7 @@ export default function Home() {
             <p className='md:w-[70%]'>
               We are very grateful to all our sponsors who help makes events like these possible!
               <br/><br/>
-              If you would like to donate, you can do so <a className='text-fhyellow border-solid border-2 p-1' href='https://hcb.hackclub.com/donations/start/forsyth-hacks-2-0' target='_blank'> here.</a>
+              If you would like to donate, you can do so <a className='text-fhyellow' href='https://hcb.hackclub.com/donations/start/forsyth-hacks-2-0' target='_blank'> here.</a>
             </p>
           </div>
           <div className='text-xl xl:text-4xl gap-8 py-8 grid-cols-1 grid-rows-2 items-center justify-items-center md:grid-cols-2 md:grid-rows-1 lg:py-16 2xl:w-[70%] 2xl:m-auto'>
