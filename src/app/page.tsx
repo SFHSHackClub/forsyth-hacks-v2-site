@@ -82,7 +82,7 @@ export default function Home() {
             />
             {' '}
             <TypeEffect
-                sequence={[1600,'and build new things']}
+                sequence={[1600,'and build new projects']}
             />
           </p>
         </div>  
