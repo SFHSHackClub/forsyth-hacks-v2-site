@@ -229,18 +229,18 @@ export default function Home() {
               If you would like to donate, you can do so <a className='text-fhyellow' href='https://hcb.hackclub.com/donations/start/forsyth-hacks-2-0' target='_blank'> here.</a>
             </p>
           </div>
-          <div className='text-xl xl:text-4xl gap-8 py-8 grid-cols-1 grid-rows-2 items-center justify-items-center md:grid-cols-2 md:grid-rows-1 lg:py-16 2xl:w-[70%] 2xl:m-auto'>
-            {/*<a href='https://hackclub.com' target='_blank'>
-              <div className='relative rounded-full bg-blue-200 w-64 h-64 md:w-[17rem] md:h-[17rem] lg:w-[18rem] lg:h-[18rem] 2xl:w-[20rem] 2xl:h-[20rem] overflow-clip border-white border-4 mx-auto'>
+          <div className='text-xl xl:text-4xl grid gap-8 py-8 grid-cols-1 grid-rows-2 items-center justify-items-center md:grid-cols-2 md:grid-rows-1 lg:py-16 2xl:w-[70%] 2xl:m-auto'>
+            <a href='https://www.mlh.io/' target='_blank'>
+              <div className='relative rounded-full bg-blue-200 w-48 h-48 2xl:w-64 2xl:h-64 md:w-[17 rem] md:h-[17 rem] lg:w-[18 rem] lg:h-[18 rem] 2xl:w-[20 rem] 2xl:h-[20 rem] overflow-clip mx-auto'>
                 <Image
-                  src="/hackclub.jpg"
-                  alt='Hack Club Logo'
+                  src="/mlh.png"
+                  alt='MLH Logo'
                   layout='fill'
                   priority
                 />
               </div>
-              <p className='pt-6'>Hack Club</p>
-            </a>*/}
+              <p className='pt-6'>Major League Hacking</p>
+            </a>
             <a href='https://www.postman.com/' target='_blank'>
               <div className='relative rounded-full bg-blue-200 w-48 h-48 2xl:w-64 2xl:h-64 md:w-[17 rem] md:h-[17 rem] lg:w-[18 rem] lg:h-[18 rem] 2xl:w-[20 rem] 2xl:h-[20 rem] overflow-clip border-white border-4 mx-auto'>
                 <Image
@@ -252,15 +252,6 @@ export default function Home() {
               </div>
               <p className='pt-6'>Postman</p>
             </a>
-
-            {/*<div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4'>
-              <Image
-                src="/carousel/image1.jpg"
-                alt='Sponsor 1'
-                layout='fill'
-                priority
-              />
-            </div>*/}
           </div>
         </div>
         <Spacer height='100px'/>
