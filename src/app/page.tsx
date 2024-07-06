@@ -284,28 +284,7 @@ export default function Home() {
               </div>
               <p className='pt-6'>Christian Dutton <br/> Co-Executive Director</p>
             </div>
-            <div>
-              <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4 mx-auto'>
-                <Image
-                  src="/dj.png"
-                  alt='DJ Headshot'
-                  layout='fill'
-                  priority
-                />
-              </div>
-              <p className='pt-6'>DJ Kaur</p>
-            </div>
-            <div>
-              <div className='relative rounded-full bg-blue-200 w-64 h-64 overflow-clip border-white border-4 mx-auto'>
-                <Image
-                  src="/ryan.png"
-                  alt='Ryan Headshot'
-                  layout='fill'
-                  priority
-                />
-              </div>
-              <p className='pt-6'>Ryan Du</p>
-            </div>
+          
             <div className='md:col-span-2 cols-span-1 text-fhyellow antialiased order-last lg:order-none'>
               <b>Still got questions?</b> We’ll reach out in 24 hours<br/>
               <br/>
